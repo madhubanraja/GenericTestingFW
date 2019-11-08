@@ -1,0 +1,129 @@
+
+all params shell
+strSparkMode local
+strParamProjName MyDBProject
+strParamDate 678
+strDateFormat MMDDYYYY
+strGenericConfigFileName ../config/MyDBProject.properties
+intTstCaseRecToShow 
+strTestCaseResToFile yes
+strTestCaseResFileLoc ./TestCaseLogs
+
+args.length : 8
+strSparkMode : local
+strPROJECTNAME : MyDBProject
+strFIC_MIS_DATE : 678
+strFIC_MIS_DATE_FORMAT : MMDDYYYY
+strGENERIC_CONFIG_LOC : ../config/MyDBProject.properties
+intTestCaseRecToShow : 25
+strTestCaseResToFile : yes
+strTestCaseResFileLoc : ./TestCaseLogs
+intNO_OF_SOURCE_FILES : 1
+SOURCE_NAME_0 : PUBLIC.CUSTOMER
+-------------------- Raw Data frame of Source 0 -------------------- 
++---+---------+---------+---------------+-------------+
+| ID|FIRSTNAME| LASTNAME|         STREET|         CITY|
++---+---------+---------+---------------+-------------+
+|  0|  Susanne|Schneider|214 - 20th Ave.|         Oslo|
+|  1|    Julia| Heiniger|  18 Upland Pl.|        Paris|
+|  2|   Robert|   Ringer|141 College Av.|         Lyon|
+|  3|      Bob|   Karsen|504 College Av.|      Seattle|
+|  4|    Laura|   Ringer|524 Seventh Av.|      Chicago|
+|  5|   Robert|    White| 63 - 20th Ave.|         Oslo|
+|  6|     Anne|Schneider|552 - 20th Ave.|        Olten|
+|  7|   Robert|   Miller| 69 Seventh Av.|    Palo Alto|
+|  8|    Julia|   Sommer|  39 Upland Pl.|         Oslo|
+|  9|  Susanne|    Steel|278 Seventh Av.|     New York|
+| 10|    James|   Karsen| 366 Upland Pl.|    Palo Alto|
+| 11|   George|      Ott|402 - 20th Ave.|        Berne|
+| 12|     John|   Fuller| 297 Upland Pl.|        Berne|
+| 13|      Bob|   Miller|158 Seventh Av.|        Paris|
+| 14|     Mary|     King| 18 Seventh Av.|        Berne|
+| 15|     John| Peterson| 405 Upland Pl.|        Paris|
+| 16|  Susanne|     King| 24 - 20th Ave.|San Francisco|
+| 17|    Janet|     King|371 - 20th Ave.|        Berne|
+| 18|     Bill|   Karsen|293 College Av.|      Seattle|
+| 19|  Susanne| Heiniger|  3 Seventh Av.|San Francisco|
++---+---------+---------+---------------+-------------+
+only showing top 20 rows
+
+intNO_OF_TARGET_FILES : 1
+TARGET_NAME_0 : PUBLIC.CUSTOMER
+-------------------- Raw Data frame of Target 0 -------------------- 
++---+---------+---------+---------------+-------------+
+| ID|FIRSTNAME| LASTNAME|         STREET|         CITY|
++---+---------+---------+---------------+-------------+
+|  0|  Susanne|Schneider|214 - 20th Ave.|         Oslo|
+|  1|    Julia| Heiniger|  18 Upland Pl.|        Paris|
+|  2|   Robert|   Ringer|141 College Av.|         Lyon|
+|  3|      Bob|   Karsen|504 College Av.|      Seattle|
+|  4|    Laura|   Ringer|524 Seventh Av.|      Chicago|
+|  5|   Robert|    White| 63 - 20th Ave.|         Oslo|
+|  6|     Anne|Schneider|552 - 20th Ave.|        Olten|
+|  7|   Robert|   Miller| 69 Seventh Av.|    Palo Alto|
+|  8|    Julia|   Sommer|  39 Upland Pl.|         Oslo|
+|  9|  Susanne|    Steel|278 Seventh Av.|     New York|
+| 10|    James|   Karsen| 366 Upland Pl.|    Palo Alto|
+| 11|   George|      Ott|402 - 20th Ave.|        Berne|
+| 12|     John|   Fuller| 297 Upland Pl.|        Berne|
+| 13|      Bob|   Miller|158 Seventh Av.|        Paris|
+| 14|     Mary|     King| 18 Seventh Av.|        Berne|
+| 15|     John| Peterson| 405 Upland Pl.|        Paris|
+| 16|  Susanne|     King| 24 - 20th Ave.|San Francisco|
+| 17|    Janet|     King|371 - 20th Ave.|        Berne|
+| 18|     Bill|   Karsen|293 College Av.|      Seattle|
+| 19|  Susanne| Heiniger|  3 Seventh Av.|San Francisco|
++---+---------+---------+---------------+-------------+
+only showing top 20 rows
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+--------			GENERIC COMPARATOR @ ( Thu Aug 29 23:20:02 EDT 2019 )			---------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+( 1 )------------ SOURCE AND TARGET COUNT and primary key VALIDATION ------------
+SOURCE_COUNT : 50
+TARGET_COUNT : 50
+
+PASSED
+
+
+
+
+( 2 )------------ TC1_COUNT_CHECK ------------
+TC1_COUNT_CHECK COUNT : 0
+
+PASSED
+
+
+
+( 3 )------------ TC2_SRC_MINUS_TGT ------------
+TC2_SRC_MINUS_TGT COUNT : 0
+
+PASSED
+
+
+
+( 4 )------------ TC3_TGT_MINUS_SRC ------------
+TC3_TGT_MINUS_SRC COUNT : 0
+
+PASSED
+
+
+
+( 5 )------------ TC4_DUPLICATE_CHECK ------------
+TC4_DUPLICATE_CHECK COUNT : 0
+
+PASSED
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Total_Pass_Count: 5
+Total_Fail_Count: 0
+Start_Time		: Thu Aug 29 23:20:02 EDT 2019
+EndTime 		: Thu Aug 29 23:20:19 EDT 2019
+status 			: PASSED
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------
+Total Time Taken: 0 day, 0 hour, 0 min 51 sec
+---------------------------------------------------------
