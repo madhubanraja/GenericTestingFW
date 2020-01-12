@@ -34,11 +34,9 @@ then
     strParamDateFormat=MMDDYYYY
     strGenericConfigFileName=../config/$strParamProjectName.properties
     bash ../config/$strParamProjectName.sh
-    cat $txtLogFileName
-    cat $jsnLogFileName
 else
     echo $#
-    echo -e "\n\n In-sufficient / more than two arguments found. please pass the project name. please pass the project name as argument. Arguments can be \n\n\tProject Name\t\t ------> AllInoneConfig / \n\t\tDATE\t\t-----> 20190930 " >> $txtLogFileName
+    echo -e "\n\n In-sufficient / more than two arguments found. please pass the project name. please pass the project name as argument. Arguments can be \n\n\tProject Name\t\t ------> AllInoneConfig / \n\t\tDATE\t\t-----> 20190930 " > $txtLogFileName
     echo -e "bash Exec.sh MyDBProject 20191230" >> $txtLogFileName
 fi #end of parameter check
 
@@ -80,5 +78,5 @@ diff_time()
 }
 
 diff_time $time_diff
-
-
+    cat $txtLogFileName
+    cat $jsnLogFileName
