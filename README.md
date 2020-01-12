@@ -190,7 +190,7 @@
 <li> Zero Developer dependency.
 </li><li> 100% configurable for
 
-    *---> Customized Transformation valiodation
+    *---> Customized Transformation validation
     *---> non programer also can use
     *---> little shell and SQL knowledge more than enough to use the solution
 </li><li> Not only comparator, little more that that.like
