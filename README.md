@@ -2,11 +2,11 @@
 <h2>Software Requirements:</h2>
 <ol>
 <li><h5>Intellij IDE community Edison</h5>
-<li><h5>Java 1.8_201</h5>
-<li><h5>Scala 2.11</h5>
-<li><h5>Spark 2.4.3 </h5>
-<li><h5>Git Bash in case of windows environment </h5>
-</ol>
+</li><li><h5>Java 1.8_201</h5>
+</li><li><h5>Scala 2.11</h5>
+</li><li><h5>Spark 2.4.3 </h5>
+</li><li><h5>Git Bash in case of windows environment </h5>
+</li></ol>
 
 <h2>What all are the use of this tool ?</h2>
 <OL>
@@ -183,3 +183,34 @@
     <li/> Find the failed testcase records in [tool folder location]/bin/TestCaseLogs/
     </OL>
 </OL>
+
+
+<b>Solution Highlights.</b>
+<ol>
+<li> Zero Developer dependency.
+</li><li> 100% configurable for
+
+    *---> Customized Transformation valiodation
+    *---> non programer also can use
+    *---> little shell and SQL knowledge more than enough to use the solution
+</li><li> Not only comparator, little more that that.like
+    *---> can be test case based solution
+    *---> PAR pipeline compoatible
+    *---> can be a standalone tool
+</li><li> Can run on WINDOWS
+</li><li> can run on LINUX
+</li><li> Can run on AWS.
+</li><li> can validate files on Windows.
+</li><li> Can validate files on Linux box
+</li><li> Can validate files on HDFS
+</li><li> Can validate files on s3
+</li></ol>
+<b>csv, partquet and any RDBS</b>
+
+<b>Pre-Requesets</b>
+
+<li>Spark 2.4.0 or greater hadoop 2.7 or greater and scala 2.11.1
+</li><li>JRE 1.8_201
+</li><li>git bash
+</li></OL>
+

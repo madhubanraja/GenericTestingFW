@@ -15,8 +15,8 @@ export strTestCaseResToFile=yes
 ##############################################################
 export start_time=$(date +%s)
 export strTestCaseResFileLoc=""
-export txtLogFileName=""
-export jsnLogFileName=""
+export txtLogFileName="TestSummary.log"
+export jsnLogFileName="TestSummary.json"
 export strParamProjectName=""
 export strParamDate=""
 export strParamDateFormat=""
@@ -25,8 +25,8 @@ export strGenericConfigFileName=""
 if [ $# -eq 2 ] ;
 then
     strTestCaseResFileLoc=./TestCaseLogs
-    txtLogFileName=TestSummary.log
-    jsnLogFileName=TestSummary.json
+    txtLogFileName=$1.log
+    jsnLogFileName=$1.json
     echo > $txtLogFileName
     echo > $jsnLogFileName
     strParamProjectName=$1
@@ -34,6 +34,8 @@ then
     strParamDateFormat=MMDDYYYY
     strGenericConfigFileName=../config/$strParamProjectName.properties
     bash ../config/$strParamProjectName.sh
+    cat $txtLogFileName
+    cat $jsnLogFileName
 else
     echo $#
     echo -e "\n\n In-sufficient / more than two arguments found. please pass the project name. please pass the project name as argument. Arguments can be \n\n\tProject Name\t\t ------> AllInoneConfig / \n\t\tDATE\t\t-----> 20190930 " >> $txtLogFileName
@@ -44,6 +46,9 @@ fi #end of parameter check
 
 export end_time=$(date +%s)
 export time_diff=$(( $end_time - $start_time ))
+
+
+# function definition
 
 diff_time()
 {
@@ -75,6 +80,5 @@ diff_time()
 }
 
 diff_time $time_diff
-cat $txtLogFileName
-cat $jsnLogFileName
+
 
